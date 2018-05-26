@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Demo</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-brand-title" >DEMO</a>
+      <a class="collapse-btn" onclick="toggleNavbar()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+    </div>
+    <div class="collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <div class="dropdown">
+            <a onclick="myFunction()" class="dropbtn">HOME</a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home1">HOME 1</a>
+              <a href="#home2">HOME 2</a>
+              <a href="#home3">HOME 3</a>
+              <a href="#home3">HOME 4</a>
+              <a href="#home3">HOME 5</a>
+              <a href="#home3">HOME 6</a>
+              <a href="#home3">HOME 7</a>
+              <a href="#home3">HOME 8</a>
+              <a href="#home3">HOME 9</a>
+              <a href="#home3">HOME 10</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          HEADERS
+        </li>
+        <li class="nav-item">
+          SLIDERS
+        </li>
+        <li class="nav-item">
+          PAGES
+        </li>
+        <li class="nav-item">
+          BLOG
+        </li>
+        <li class="nav-item">
+          SHOP
+        </li>
+        <li class="nav-item">
+          ELEMENTS
+        </li>  
+      </ul>
+      <ul class="navbar-nav-icons">
+        <li>
+          <a>
+            <div class="cart">
+              <i class="fa fa-shopping-cart"></i>
+              <div class="cart-count">
+                <div class="count">
+                  0
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a>
+            <i class="fa fa-search"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="slider">
+      <div class="slider-item">
+        <img src="images/slider-1.jpg">
+      </div>
+      <div class="slider-item show">
+        <img src="images/slider-2.jpg">
+        <div class="slider-content">
+          <div><span class="welcome-note">BRILLIANT</span></div>
+          <div><span class="welcome-note">SMART & BIG</span></div>
+          <div><span class="welcome-note">WEBSITES</span></div>
+          <div class="welcome-note-qn">HELLO, ARE YOU READY TO START ?</div>
+          <div class="welcome-note-buttons">
+            <button class="btn btn-primary">
+              <i class="fa fa-play-circle"></i>
+              WATCH VIDEO
+            </button>
+            <button class="btn btn-secondary">
+              <i class="fa fa-check-circle"></i>
+              LEARN MORE
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-item">
+        <img src="images/slider-3.jpg">
+      </div>
+
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+      <a class="c-btn c-left" onclick="movePrev()">
+        <i class="fa fa-chevron-left"></i>
+      </a>
+      <a class="c-btn c-right" onclick="moveNext()">
+        <i class="fa fa-chevron-right"></i>
+      </a>
+      
+    </div>
+    <div class="main-content">
+      <div class="main-title">
+        <div>
+          <span>RECENT PORTFOLIO</span>
+        </div>
+      </div>
+      <aside>
+          <div>some content goes here some content goes here some content </div>
+          <div>goes here some content goes here some content goes here some </div>
+      </aside>
+      <div class="sub-menu-container">
+        <ul class="navbar-sub-menu">
+          <li class="nav-item active">
+            <a>SHOW ALL</a>
+          </li>
+          <li class="nav-item">
+              <a>CREATIVE</a>
+          </li>
+          <li class="nav-item">
+              <a>DIGITAL</a>
+          </li>
+          <li class="nav-item">
+              <a>MARKETING</a>
+          </li>
+          <li class="nav-item">
+              <a>STYLING</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="images/img-1.jpg">
+        </div>
+        <div class="card">
+          <img src="images/img-2.jpg">
+        </div>
+        <div class="card">
+          <img src="images/img-3.jpg">
+        </div>
+        <div class="card">
+          <img src="images/img-4.jpg">
+        </div>
+        <div class="card">
+          <img src="images/img-5.jpg">
+        </div>
+        <div class="card">
+          <img src="images/img-6.jpg">
+        </div>
+        <div class="card">
+          <img src="images/img-7.jpg">
+        </div>
+        <div class="card">
+          <img src="images/img-8.jpg">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!--  -->
+    <div class="footer-content">
+      <div class="footer-card">
+        <div class="footer-card-title big">
+          DEMO
+        </div>
+        <div class="red-line-no"></div>
+        <div class="footer-card-content">
+          some content goes here some content goes here 
+          some content goes here some content goes here
+          some content goes here
+        </div>
+        <div class="button-group">
+          <button class="btn btn-footer">PURCHASE NOW</button>
+        </div>
+      </div>
+      <div class="footer-card">
+        <div class="footer-card-title">
+          RECENT POST
+        </div>
+        <div class="red-line"></div>
+        <div class="posts">
+            <div class="post">
+              <div class="post-icon">
+                <div class="icon-box">
+                  <i class="fa fa-pencil"></i>
+                </div>
+                  
+              </div>
+              <div class="post-content">
+                <div class="post-title">BEST BUSINESS THEMES FOR CREATIVE</div>
+                <div class="post-date">October 3, 2017</div>                
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-icon">
+                <div class="icon-box">
+                  <i class="fa fa-pencil"></i>
+                </div>
+                  
+              </div>
+              <div class="post-content">
+                <div class="post-title">DIGITL MARKETING SOLUTIONS FOR BUSINESS</div>
+                <div class="post-date">October 3, 2017</div>                
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="footer-card">
+        <div class="footer-card-title">
+          TAGS
+        </div>
+        <div class="red-line"></div>
+        <div class="tags">
+            <div class="tag">BUSINESS</div>
+            <div class="tag">CLEAN</div>
+            <div class="tag">CORPORATE</div>
+            <div class="tag">CREATIVE</div>
+            <div class="tag">DESIGN</div>
+            <div class="tag">DIGITAL</div>
+            <div class="tag">ENTERTAINMENT</div>
+            <div class="tag">MARKETING</div>
+            <div class="tag">SEO</div>
+            <div class="tag">WEB</div>
+
+        </div>
+      </div>
+      <div class="footer-card">
+        <div class="footer-card-title">
+          INSTAGRAM
+        </div>
+        <div class="red-line"></div>
+        <div class="instagram-tiles">
+            <img src="images/img-1.jpg">
+            <img src="images/img-2.jpg">
+            <img src="images/img-3.jpg">
+            <img src="images/img-4.jpg">
+            <img src="images/img-5.jpg">
+            <img src="images/img-6.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="copyright">@ COPYRIGHT WEBERIUM. ALL RIGHT RESERVED.</div>
+      <div class="footer-menu">
+        <div class="footer-menu-items">
+          <a class="links">ABOUT US</a>
+          <a class="links">TERMS</a>
+          <a class="links">DELIVERY</a>
+          <a class="links">SERVICES</a>
+          <a>CONTACTS</a>
+          <a class="social">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="social">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="social">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* When the user clicks on the menu, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+  /* toggle navbar for mobile view */ 
+  function toggleNavbar(){
+      let collapse = document.querySelectorAll('.collapse')[0];
+      if(collapse.className === 'collapse show'){
+          collapse.className = 'collapse';
+      } else {
+          collapse.className = 'collapse show';
+      }
+  }
+
+  /* show next/first slide in carousal */
+  function moveNext(){
+      var slides = document.querySelectorAll('.slider-item');
+      var dots = document.querySelectorAll('.dot');
+      var activeIndex = -1;
+      for(var i=0; i < slides.length; i++){
+          if(slides[i].className === 'slider-item show'){
+              activeIndex = i;
+          }
+      }
+      if(activeIndex > -1){
+          slides[activeIndex].className = 'slider-item';
+          dots[activeIndex].className = 'dot';
+          if(activeIndex < slides.length -1){
+              slides[activeIndex+1].className ='slider-item show';
+              dots[activeIndex+1].className ='dot active';
+          } else {
+              slides[0].className ='slider-item show';
+              dots[0].className ='dot active';
+          }
+      }
+  }
+
+  /* show previous/last slide in carousal */
+  function movePrev(){
+      var slides = document.querySelectorAll('.slider-item');
+      var dots = document.querySelectorAll('.dot');
+      var activeIndex = -1;
+      for(var i=0; i < slides.length; i++){
+          if(slides[i].className === 'slider-item show'){
+              activeIndex = i;
+          }
+      }
+      if(activeIndex > -1){
+          slides[activeIndex].className = 'slider-item';
+          dots[activeIndex].className = 'dot';
+          if(activeIndex > 0){
+              slides[activeIndex - 1].className ='slider-item show';
+              dots[activeIndex - 1].className ='dot active';
+          } else {
+              slides[slides.length -1].className ='slider-item show';
+              dots[slides.length -1].className ='dot active';
+          }
+      }
+  }
+  </script>
+
+</body>
+</html>
